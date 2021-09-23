@@ -1,0 +1,35 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.emoji-input {
+  width: 50vw;
+  height: 10vh;
+  box-shadow: rgb(229 231 235) 0px 1px 25px;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 2rem;
+}
+.emoji-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.knownEmoji {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+}
+.knownEmoji span {
+  box-shadow: rgb(229 231 235) 0px 1px 15px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
