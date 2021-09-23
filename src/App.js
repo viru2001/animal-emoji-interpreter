@@ -47,8 +47,12 @@ export default function App() {
       <h2>{selectedEmoji}</h2>
       <div className="emoji-container">
         <div className="knownEmoji">
-          {emojiesKnown.map((emoji) => {
-            return <span onClick={() => handleEmojiClick(emoji)}>{emoji}</span>;
+          {emojiesKnown.map((emoji, index) => {
+            return (
+              <span key={index} onClick={() => handleEmojiClick(emoji)}>
+                {emoji}
+              </span>
+            );
           })}
         </div>
       </div>
